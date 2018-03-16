@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align:right; 
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    #centralizar {;
+      left:5%;
+      width: 15%;
+    }
+
+    </style>
+  </head>
+  <body background="imageprincipal.jpg" style ="background-size:cover;">
+    <img id="centralizar" src="fundo.png" width="100" height="100">
+    <ul>
+      <li><a href="home.html"> Pagina Inicial</a></li>
+      <li><a href="login.html">Entrar</a> </li>
+      <li><a href="cadastro.html">Cadastrar</a></li>
+      <li><a href="home.html#tabela">Nossos Produtos</a></li>
+      <li><a href="#busca">Buscar Produtos</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+    </ul>
+    <div style="background-color: white; width: 15cm; height: 12cm; margin-top: 0.7cm; padding-left: 0.2cm; margin-left: 0.5cm;">
+      <form>
+        <fieldset>
+          <legend style="font-size: 25px" >Cadastre-se</legend>
+          <br>
+          Nome completo <input style="width: 9cm" type="text" name="Nome completo"><br><br>
+          E-mail <input  style="width: 9cm" type="text" name="E-mail"><br><br>
+          Sexo <input list="Sexo">
+          <datalist id="Sexo">
+            <option value="masculino">
+            <option value="feminino">
+            <option value="outro">  
+          </datalist>
+          <br><br>
+          Data de nascimento <input type="date" name="Data de nascimento"><br><br>
+          Endereço <input  style="width: 9cm" type="text" name="Endereço"><br><br>
+          Cidade <input  style="width: 9cm" type="text" name="Cidade"><br><br>
+          Telefone <input  style="width: 0.8cm" type="text" name="DDD"> 
+          <input style="width: 3cm" type="text" name="Numero"><br><br>
+          Usuário <input  style="width: 4cm" type="text" name="Usuário"><br><br>
+          Senha <input  style="width: 4cm" type="text" name="Senha"><br><br>
+          <input type="submit" value="Cadastrar">
+          <input type="reset" value="Redefinir">
+        </fieldset>
+      </form> 
+
+    </div>
+  </body>
+</html>
