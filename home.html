@@ -8,6 +8,7 @@
         padding:0;
         overflow: hidden;
         background-color: #333;
+        margin-top: 0.2px;
     }
 
     li {
@@ -28,10 +29,32 @@
       left:1%;
     }
 
+    div.fixed {
+    	position: fixed;
+	}
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      padding: 9px;
+      font-family: arial;
+      display: inline-block;  
+      margin-bottom: 0;
+      width: 100%;
+      background-color: #111;
+      color: white;
+      text-align: center;
+  	}
+
+
     </style> 
   </head>
-  	<body background="imageprincipal.jpg" style="background-repeat: no-repeat;background-size:cover;">
-	    <img id="centralizar" src="fundo.png" width="200" height="100"> 
+  	<body background="imageprincipal.jpg" style="background-repeat: no-repeat;background-size:cover;margin: 0">
+  		<div style = "background-attachment: fixed;">
+	  		<div style="background-color: white;">
+		    	<img src="fundo_transparente.png" width="200" height="100"; style="background-attachment: fixed; margin-left: auto; margin-right: auto; display: block;" /> 
+		    </div>
+		</div>
 	    <ul>
 	      <li><a href="home.html"> Pagina Inicial</a></li>
 	      <li><a href="login.html">Entrar</a> </li>
@@ -46,10 +69,10 @@
 	        <source src="produtos1.mp4" type="video/mp4" />
 	      </video> 
 	    </p>
-	    <div style="background-color:#ffffff; width:13.6cm; margin-top: 7cm" >
+	    <div style=" height: 400px; background-color:#ffffff; width:13.5cm; margin-top: 5cm" >
 	      <a id="tabela"> </a>
 	      <table border="2px"> 
-	        <h2 style="text-align: center;"> Produtos  </h2> 
+	        <h2 style="text-align: center;"> Produtos  </h2>
 	        <tr> 
 	          <td> <img src="feijao.jpg" width="160"> </td>
 	          <td> <img src="refrigerante.png" width="160"> </td> 
@@ -61,6 +84,9 @@
 	          <td> <img src="frutas.jpeg" width="160"> </td> 
 	        </tr> 
 	      </table>
+	    </div>
+	    <div >
+	    	<h4 class="footer">Compra fácil </h4> 
 	    </div>  
 	</body>
 </html>
